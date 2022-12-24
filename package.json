@@ -1,0 +1,28 @@
+{
+  "name": "animedownloader",
+  "version": "1.0.2",
+  "main": "index.js",
+  "author": "Guilherme F. Schiavone",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "type": "module",
+  "prettier": {
+    "trailingComma": "all"
+  },
+  "bin": {
+    "animedownloader": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^9.4.1",
+    "figlet": "^1.5.2",
+    "node-emoji": "^1.11.0",
+    "puppeteer": "^19.4.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-adblocker": "^2.13.5",
+    "puppeteer-extra-plugin-user-preferences": "^2.4.0"
+  }
+}
