@@ -5,6 +5,7 @@
   "author": "Guilherme F. Schiavone",
   "scripts": {
     "start": "node dist/bundle.js",
+    "dev": "node index.js",
     "build": ".\\node_modules\\.bin\\esbuild index.js --bundle --platform=node --outfile=dist/bundle.js"
   },
   "license": "MIT",
@@ -16,14 +17,16 @@
     "animedownloader": "./index.js"
   },
   "dependencies": {
+    "animedownloader": "^1.0.4",
     "chalk": "^5.2.0",
     "commander": "^9.4.1",
     "esbuild": "^0.16.10",
     "figlet": "^1.5.2",
+    "global": "^4.4.0",
     "node-emoji": "^1.11.0",
-    "puppeteer": "^19.4.1",
-    "puppeteer-extra": "^3.3.4",
-    "puppeteer-extra-plugin-adblocker": "^2.13.5",
-    "puppeteer-extra-plugin-user-preferences": "^2.4.0"
+    "playwright": "^1.29.1"
+  },
+  "devDependencies": {
+    "@cliqz/adblocker-playwright": "^1.25.1"
   }
 }
